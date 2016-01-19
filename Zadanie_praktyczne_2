@@ -1,47 +1,48 @@
 Zadanie_praktyczne_2
 
-Tytuł: 	Operacje service translate	
+I przypadek testowy
 
-Środowisko:	Przeglądarka: FF 43.0.3
+Identyfikator przypadku: 		1 
+Nazwa przypadku: 			Sprawdzenie operacji AddWord - dodanie do bazy danych, 
+Warunki początkowe: 			Para dodawanych słów: "kot- cat" nie znajduje się w bazie danych, 
+Dane wejściowe: 			<tran:wordPln>kot, <tran:wordEng>cat,
+Kroki do wykonania: 			Wywołaj operacje AddWord z podanymi danymi wejściowymi.
+Dane wyjściowe: 			<tran:status>Dodano do bazy danych.
+Oczekiwany rezultat: 			Do bazy danych została dodana para słów "kot - cat", odpowiednio do kolumny wordPln i wordEng.
+Priorytet: 				Wysoki
+Osoba odpowiedzialna/wykonująca test: 	Iwona Wojtala
+Status testu: 
 
-System Operacyjny: XP, SP 3
 
-Kroki do wykonania w przypadkach testowych:	
-Wywołanie programu z konsoli	
-Sprawdzenie, czy dany zestaw słów znajduje się w bazie danych
-Jeśli tak: zwracany jest komunikat błędu
-	
-Identyfikator przypadku testowego: 1.	
-Nazwa i opis celu wykonania testu: Sprawdzenie operacji AddWord	
-Stan początkowy: Operacja AddWord dodaje konwent słownika do bazy danych
-Parametr początkowy: tran:AddWordRequest	
-Identyfikator pojedynczej czynności:	1.1.	
-Akcja - pojedyncza czynność:	tran:wordPln	
-Oczekiwany wynik:	Varchar 255	
-Kod błędu:SOAP-ENV:Server	
-Próba zapisu więcej niż 255 znaków
-Identyfikator pojedynczej czynności:	1.2.	
-Akcja - pojedyncza czynność:	tran:wordEng	
-Oczekiwany wynik:	Varchar 255	
-Uzyskany wynik:	Kod błędu:SOAP-ENV:Server	
-Informacja o prawidłowym wykonaniu testu/ewentualne komentarze: Próba zapisu do bazy pary słów, która jest już dodana
 
-Identyfikator przypadku testowego: 2.	
-Nazwa i opis celu wykonania testu: Sprawdzenie operacji TranslatePlnToEng	
-Stan początkowy: Operacja TranslatePlnToEng wyszukuje i pobiera tłumaczenia słowa polskiego na angielskie	
-Parametr początkowy:	tran: TranslatePlnToEng	
-Identyfikator pojedynczej czynności:	2.1.	
-Akcja - pojedyncza czynność:	tran:wordPln	
-Oczekiwany wynik:	tran:wordEng	
-Uzyskany wynik:	Kod błędu:SOAP-ENV:Server	
-Informacja o prawidłowym wykonaniu testu/ewentualne komentarze: W bazie danych dla zadanego polskiego słowa nie znaleziono angielskiego odpowiednika
 
-Identyfikator przypadku testowego: 3.	
-Nazwa i opis celu wykonania testu: Sprawdzenie operacji TranslateEngToPln	
-Stan początkowy: Operacja TranslateEngToPln wyszukuje i pobiera tłumaczenia słowa angielskiego na polskie 	
-Parametr początkowy:	tran: TranslateEngToPln	
-Identyfikator pojedynczej czynności:	3.1.	
-Akcja - pojedyncza czynność:	tran:wordEng	
-Oczekiwany wynik:	tran:wordPln	
-Uzyskany wynik:	Kod błędu:SOAP-ENV:Server	
-Informacja o prawidłowym wykonaniu testu/ewentualne komentarze: W bazie danych dla zadanego angielskiego słowa nie znaleziono polskiego odpowiednika
+
+II przypadek testowy
+
+Identyfikator przypadku: 		2
+Nazwa przypadku: 			Sprawdzenie operacji TranslatePlnToEng
+Warunki początkowe: 			Słowo kot nie ma swojego angielskiego odpowiednika w bazie danych
+Dane wejściowe: 			<tran:wordPln>kot,
+Kroki do wykonania: 			Wywołaj operacje TranslatePlnToEng z podanymi danymi wejściowymi.
+Dane wyjściowe: 			<tran:status> sprawdzono operację TranslatePlnToEng
+Oczekiwany rezultat: 			Do bazy danych wprowadzono  słowo „kot” odpowiednio do kolumny wordPln
+Priorytet: 				Wysoki
+Osoba odpowiedzialna/wykonująca test: 	Iwona Wojtala
+Status testu: 
+
+
+
+
+
+III przypadek testowy
+
+Identyfikator przypadku: 		3
+Nazwa przypadku: 			Sprawdzenie operacji TranslateEngToPln
+Warunki początkowe: 			Słowo „cat” nie ma swojego polskiego odpowiednika w bazie danych
+Dane wejściowe: 			<tran:wordEng>cat,
+Kroki do wykonania: 			Wywołaj operacje TranslateEngToPln z podanymi danymi wejściowymi.
+Dane wyjściowe: 			<tran:status> sprawdzono operację TranslateEngToPln
+Oczekiwany rezultat: 			Do bazy danych wprowadzono  słowo „cat” odpowiednio do kolumny wordEng
+Priorytet: 				Wysoki
+Osoba odpowiedzialna/wykonująca test: 	Iwona Wojtala
+Status testu: 
