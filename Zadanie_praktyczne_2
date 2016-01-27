@@ -3,172 +3,172 @@ Suselcia31/Zadanie_2
 
 Zadanie_praktyczne_2
 
+Zadanie_praktyczne_2
+
 Przypadek testowy
-Id.: 				1.
-Nazwa przypadku:	Sprawdzenie operacji AddWord  –  dodanie konwentu słownika do bazy danych;
-Warunki początkowe:	Para dodawanych słów:  „kot – cat” nie znajduje się w bazie danych;
-Dane wejściowe:		<tran: wordPln>kot;
-				<tran: wordEng>cat;
-Kroki do wykonania:		Wywołaj operacje z podanymi danymi wejściowymi;
-Dane wyjściowe:		 <train: status>Dodano do bazy danych;
+Id.: 			1.
+Nazwa przypadku:	Sprawdzenie operacji AddWord  –  dodanie konwentu słownika do bazy danych
+Warunki początkowe:	Para dodawanych słów:  „kot – cat” nie znajduje się w bazie danych
+Dane wejściowe:		<tran: wordPln>kot
+			<tran: wordEng>cat
+Kroki do wykonania:	Wywołaj operacje z podanymi danymi wejściowymi
+Dane wyjściowe:		<train: status>Dodano do bazy danych
+Oczekiwany rezultat:	Do bazy danych została dodana para słów „kot – cat”, odpowiednio do kolumny wordPln i wordEng
+Priorytet:		Wysoki
+Osoba odpowiedzialna/
+wykonująca test:	Iwona Wojtala
+Status testu:		...
+
+
+Przypadek testowy
+Id.: 	                2.					
+Nazwa przypadku:	Sprawdzenie operacji AddWord  –  wystąpienie błędu w parametrze wyjściowym
+Warunki początkowe:	W odpowiedzi jest zwracany kod błędu parametru wyjściowego <faultcode>
+Dane wejściowe:		<tran: wordPln>kot
+			<tran: wordEng>cat
+Kroki do wykonania:	Wywołaj operacje z podanymi danymi wejściowymi
+Dane wyjściowe:		<train: status>Dodano do bazy danych
 Oczekiwany rezultat:	Do bazy danych została dodana para słów „kot – cat”, odpowiednio do kolumny wordPln i wordEng;
-Priorytet:			Wysoki;
+Priorytet:		Wysoki
 Osoba odpowiedzialna/
-wykonująca test:		Iwona Wojtala;
-Status testu:			...
+wykonująca test:	Iwona Wojtala
+Status testu:		...
 
 
 Przypadek testowy
-Id.: 	2.					
-Nazwa przypadku:	Sprawdzenie operacji AddWord  –  wystąpienie błędu w parametrze wyjściowym;
-Warunki początkowe:	W odpowiedzi jest zwracany kod błędu parametru wyjściowego <faultcode>;
-Dane wejściowe:		<tran: wordPln>kot;
-				<tran: wordEng>cat;
-Kroki do wykonania:		Wywołaj operacje z podanymi danymi wejściowymi;
-Dane wyjściowe:		<train: status>Dodano do bazy danych;
-Oczekiwany rezultat:	Do bazy danych została dodana para słów „kot – cat”, odpowiednio do kolumny wordPln i wordEng;
-Priorytet:			Wysoki;
+Id.: 	                3.					
+Nazwa przypadku:	Sprawdzenie operacji AddWord  –  wystąpienie błędu w parametrze wyjściowym
+Warunki początkowe:	W odpowiedzi jest zwracany komunikat błędu parametru wyjściowego <faultstring>
+Dane wejściowe:		<tran: wordPln>kot
+			<tran: wordEng>cat
+Kroki do wykonania:	Wywołaj operacje z podanymi danymi wejściowymi
+Dane wyjściowe:		<train: status>Dodano do bazy danych
+Oczekiwany rezultat:	Do bazy danych została dodana para słów „kot – cat”, odpowiednio do kolumny wordPln i wordEng
+Priorytet:		Wysoki
 Osoba odpowiedzialna/
-wykonująca test:		Iwona Wojtala;
-Status testu:			...
+wykonująca test:	Iwona Wojtala
+Status testu:		...
 
 
 Przypadek testowy
-Id.: 	3.					
-Nazwa przypadku:	Sprawdzenie operacji AddWord  –  wystąpienie błędu w parametrze wyjściowym;
-Warunki początkowe:	W odpowiedzi jest zwracany komunikat błędu parametru wyjściowego <faultstring>;
-Dane wejściowe:		<tran: wordPln>kot;
-				<tran: wordEng>cat;
-Kroki do wykonania:		Wywołaj operacje z podanymi danymi wejściowymi;
-Dane wyjściowe:		<train: status>Dodano do bazy danych;
-Oczekiwany rezultat:	Do bazy danych została dodana para słów „kot – cat”, odpowiednio do kolumny wordPln i wordEng;
-Priorytet:			Wysoki;
+Id.: 	                4.					
+Nazwa przypadku:	Sprawdzenie operacji AddWord  –  wystąpienie komunikatu o błędzie po dodaniu słów do bazy danych
+Warunki początkowe:	W odpowiedzi jest zwracany komunikat ‘could not execute statement’ – próba zapisu więcej niż 255 znaków
+Dane wejściowe:		<tran: wordPln>kot
+			<tran: wordEng>cat
+Kroki do wykonania:	Wywołaj operacje z podanymi danymi wejściowymi
+Dane wyjściowe:		<train: status>Dodano do bazy danych
+Oczekiwany rezultat:	Do bazy danych została dodana para słów „kot – cat”, odpowiednio do kolumny wordPln i wordEng
+Priorytet:		Wysoki
 Osoba odpowiedzialna/
-wykonująca test:		Iwona Wojtala;
-Status testu:			...
+wykonująca test:	Iwona Wojtala
+Status testu:		...
 
 
 Przypadek testowy
-Id.: 	4.					
-Nazwa przypadku:	Sprawdzenie operacji AddWord  –  wystąpienie komunikatu o błędzie po dodaniu słów do bazy danych;
-Warunki początkowe:	W odpowiedzi jest zwracany komunikat ‘could not execute statement’ – próba zapisu więcej niż 255 znaków;
-Dane wejściowe:		<tran: wordPln>kot;
-				<tran: wordEng>cat;
-Kroki do wykonania:		Wywołaj operacje z podanymi danymi wejściowymi;
-Dane wyjściowe:		<train: status>Dodano do bazy danych;
-Oczekiwany rezultat:	Do bazy danych została dodana para słów „kot – cat”, odpowiednio do kolumny wordPln i wordEng;
-Priorytet:			Wysoki;
+Id.: 	                5.					
+Nazwa przypadku:	Sprawdzenie operacji AddWord  –  wystąpienie komunikatu o błędzie po dodaniu słów do bazy danych
+Warunki początkowe:	W odpowiedzi jest zwracany komunikat ‘Ups, to już było’ – próba zapisu do bazy danych pary słów, która jest już dodana
+Dane wejściowe:		<tran: wordPln>kot
+			<tran: wordEng>cat
+Kroki do wykonania:	Wywołaj operacje z podanymi danymi wejściowymi
+Dane wyjściowe:		<train: status>Dodano do bazy danych
+Oczekiwany rezultat:	Do bazy danych została dodana para słów „kot – cat”, odpowiednio do kolumny wordPln i wordEng
+Priorytet:		Wysoki
 Osoba odpowiedzialna/
-wykonująca test:		Iwona Wojtala;
-Status testu:			...
+wykonująca test:	Iwona Wojtala
+Status testu:		...
 
 
 Przypadek testowy
-Id.: 	5.					
-Nazwa przypadku:	Sprawdzenie operacji AddWord  –  wystąpienie komunikatu o błędzie po dodaniu słów do bazy danych;
-Warunki początkowe:	W odpowiedzi jest zwracany komunikat ‘Ups, to już było’ – próba zapisu do bazy danych pary słów, która jest już dodana;
-Dane wejściowe:		<tran: wordPln>kot;
-				<tran: wordEng>cat;
-Kroki do wykonania:		Wywołaj operacje z podanymi danymi wejściowymi;
-Dane wyjściowe:		<train: status>Dodano do bazy danych;
-Oczekiwany rezultat:	Do bazy danych została dodana para słów „kot – cat”, odpowiednio do kolumny wordPln i wordEng;
-Priorytet:			Wysoki;
+Id.: 			6.		
+Nazwa przypadku:	Sprawdzenie przebiegu operacji AddWord  –  dodanie parametru wordPln do bazy danych			
+Warunki początkowe:	Zestawu słów polskich/ polskie słowo nie dodano do bazy danych
+Dane wejściowe:		Parametr wordPln  –  słowo w języku polskim
+Kroki do wykonania:	Wywołaj operację AddWord z parametrem wordPln
+			Sprawdź, czy dodano parametr WordPln do bazy danych
+Dane wyjściowe:		<train: status>Dodano do bazy danych
+Oczekiwany rezultat:	Do bazy danych dodano parametr wordPln do kolumny wordPln
+Priorytet:		Wysoki;
 Osoba odpowiedzialna/
-wykonująca test:		Iwona Wojtala;
-Status testu:			...
+wykonująca test:	Iwona Wojtala
+Status testu:        	...
 
 
 Przypadek testowy
-Id.: 				6.		
-Nazwa przypadku:	Sprawdzenie przebiegu operacji AddWord  –  dodanie parametru wordPln do bazy danych;			
-Warunki początkowe:	Zestawu słów polskich/ polskie słowo nie dodano do bazy danych;
-Dane wejściowe:		Parametr wordPln  –  słowo w języku polskim;
-Kroki do wykonania:		Wywołaj operację AddWord z parametrem wordPln;
-				Sprawdź, czy dodano parametr WordPln do bazy danych;
-Dane wyjściowe:		<train: status>Dodano do bazy danych;
-Oczekiwany rezultat:		Do bazy danych dodano parametr wordPln do kolumny wordPln;
-Priorytet:			Wysoki;
+Id.: 			7.		
+Nazwa przypadku:	Sprawdzenie przebiegu operacji AddWord  –  dodanie parametru wordEng do bazy danych			
+Warunki początkowe:	Zestaw słów angielskich/ angielskie słowo nie jest dodany do bazy danych
+Dane wejściowe:		Parametr wordEng  –  słowo w języku polskim
+Kroki do wykonania:	Wywołaj operację AddWord z parametrem wordEng
+			Sprawdź, czy dodano parametr WordEng do bazy danych
+Dane wyjściowe:		Parametr wordEng  -  dodano bazy danych
+			train: status>Dodano do bazy danych
+Oczekiwany rezultat:	Do bazy danych dodano parametr wordEng do kolumny wordEng 
+                      	(Varchar 255)
+Priorytet:		Wysoki
 Osoba odpowiedzialna/
-wykonująca test:		Iwona Wojtala;
-Status testu:        		...
+wykonująca test:	Iwona Wojtala
+Status testu:        	...
 
 
 Przypadek testowy
-Id.: 				7.		
-Nazwa przypadku:	Sprawdzenie przebiegu operacji AddWord  –  dodanie parametru wordEng do bazy danych;			
-Warunki początkowe:	Zestaw słów angielskich/ angielskie słowo nie jest dodany do bazy danych;
-Dane wejściowe:		Parametr wordEng  –  słowo w języku polskim;
-Kroki do wykonania:		Wywołaj operację AddWord z parametrem wordEng;
-				Sprawdź, czy dodano parametr WordEng do bazy danych;
-Dane wyjściowe:		Parametr wordEng  -  dodano bazy danych;
-				<train: status>Dodano do bazy danych;
-Oczekiwany rezultat:		Do bazy danych dodano parametr wordEng do kolumny wordEng 
-(Varchar 255);
-Priorytet:			Wysoki;
-Osoba odpowiedzialna/
-wykonująca test:		Iwona Wojtala;
-Status testu:        		...
-
-
-Przypadek testowy
-Id.: 				8.		
-Nazwa przypadku:	Sprawdzenie przebiegu operacji AddWord  –  zapisanie parametru wordPln do bazy danych;			
-Warunki początkowe:	Zestaw słów polskich/ polskie słowo nie jest zapisane w bazie danych;
-Dane wejściowe:		Parametr wordPln –  słowo w języku polskim;
-Kroki do wykonania:	Wywołaj operację AddWord z parametrem wordPln; 
-Sprawdź, czy parametr wordPln jest zapisany;
-Dane wyjściowe:		Parametr wordPln -  zapisano bazie danych;
-				<train: status>Zapisano w bazie danych;
+Id.: 			8.		
+Nazwa przypadku:	Sprawdzenie przebiegu operacji AddWord  –  zapisanie parametru wordPln do bazy danych			
+Warunki początkowe:	Zestaw słów polskich/ polskie słowo nie jest zapisane w bazie danych
+Dane wejściowe:		Parametr wordPln –  słowo w języku polskim
+Kroki do wykonania:	Wywołaj operację AddWord z parametrem wordPln
+                      	Sprawdź, czy parametr wordPln jest zapisany
+Dane wyjściowe:		Parametr wordPln -  zapisano bazie danych
+			<train: status>Zapisano w bazie danych
 Oczekiwany rezultat:	W  bazie danych zapisano parametr wordPln do kolumny wordPln
- (Varchar 255);
-Priorytet:			Wysoki;
+                      	(Varchar 255)
+Priorytet:		Wysoki
 Osoba odpowiedzialna/
-wykonująca test:		Iwona Wojtala;
-Status testu:        		...
+wykonująca test:	Iwona Wojtala
+Status testu:        	...
 
 
 Przypadek testowy
-Id.: 				9.		
-Nazwa przypadku:	Sprawdzenie operacji AddWord  –  zapisanie parametru wordEng do bazy danych;			
+Id.: 			9.		
+Nazwa przypadku:	Sprawdzenie operacji AddWord  –  zapisanie parametru wordEng do bazy danych			
 Warunki początkowe:	Zestaw słów angielskich/ angielskie słowo nie jest zapisane w bazie danych
-Dane wejściowe:		Parametr wordEng –  słowo w języku angielskim;
-Kroki do wykonania:	Wywołaj operację AddWord z parametrem wordEng; 
-Sprawdź, czy parametr wordEng jest zapisany;
-Dane wyjściowe:		Parametr wordEng  -  zapisano bazie danych;
-				<train: status>Dodano do bazy danych;
+Dane wejściowe:		Parametr wordEng –  słowo w języku angielskim
+Kroki do wykonania:	Wywołaj operację AddWord z parametrem wordEng
+                      	Sprawdź, czy parametr wordEng jest zapisany
+Dane wyjściowe:		Parametr wordEng  -  zapisano bazie danych
+			<train: status>Dodano do bazy danych
 Oczekiwany rezultat:	W  bazie danych zapisano parametr wordEng do kolumny wordEng
- (Varchar 255);
-Priorytet:			Wysoki;
+                      	(Varchar 255)
+Priorytet:		Wysoki
 Osoba odpowiedzialna/
-wykonująca test:		Iwona Wojtala;
-Status testu:        		...
+wykonująca test:	Iwona Wojtala
+Status testu:        	...
 
 
 Przypadek testowy
-Id.: 				10.		
-Nazwa przypadku:	Sprawdzenie operacji TranslatePlnToEng – wyszukanie tłumaczenia słów angielskich przypisanych do słowa polskiego;	
-Warunki początkowe:	W bazie danych dla zadanego polskiego słowa nie znaleziono angielskiego odpowiednika;
-Dane wejściowe:		Parametr tran:wordPln –  słowo w języku polskim;
-Kroki do wykonania:	Wywołaj operację TranslatePlnToEng; 
-Dane wyjściowe:		Parametr ns2:wordEng – słowo w języku angielskim;
-Oczekiwany rezultat:	W bazie danych wyszukano wszystkie słowa angielskie przypisane do słowa polskiego;
-Priorytet:			Wysoki;
+Id.: 			10.		
+Nazwa przypadku:	Sprawdzenie operacji TranslatePlnToEng – wyszukanie tłumaczenia słów angielskich przypisanych do słowa polskiego	
+Warunki początkowe:	W bazie danych dla zadanego polskiego słowa nie znaleziono angielskiego odpowiednika
+Dane wejściowe:		Parametr tran:wordPln –  słowo w języku polskim
+Kroki do wykonania:	Wywołaj operację TranslatePlnToEng 
+Dane wyjściowe:		Parametr ns2:wordEng – słowo w języku angielskim
+Oczekiwany rezultat:	W bazie danych wyszukano wszystkie słowa angielskie przypisane do słowa polskiego
+Priorytet:		Wysoki
 Osoba odpowiedzialna/
-wykonująca test:		Iwona Wojtala;
-Status testu:        		...
+wykonująca test:	Iwona Wojtala
+Status testu:        	...
 
 
 Przypadek testowy
-Id.: 				11.		
-Nazwa przypadku:	Sprawdzenie operacji TranslateEngToPlnRequest – wyszukanie tłumaczenia słów polskich przypisanych do angielskiego;	
-Warunki początkowe:	W bazie danych dla zadanego angielskiego słowa nie znaleziono polskiego odpowiednika;
-Dane wejściowe:		Parametr tran:wordEng –  słowo w języku angielskim;
-Kroki do wykonania:	Wywołaj operację TranslateEngToPlnRequest;
-Dane wyjściowe:		Parametr ns2:wordPl – słowo w języku polskim;
-Oczekiwany rezultat:	W bazie danych wyszukano wszystkie słowa polskie przypisane do słowa angielskiego;
-Priorytet:			Wysoki;
+Id.: 			11.		
+Nazwa przypadku:	Sprawdzenie operacji TranslateEngToPlnRequest – wyszukanie tłumaczenia słów polskich przypisanych do angielskiego	
+Warunki początkowe:	W bazie danych dla zadanego angielskiego słowa nie znaleziono polskiego odpowiednika
+Dane wejściowe:		Parametr tran:wordEng – słowo w języku angielskim
+Kroki do wykonania:	Wywołaj operację TranslateEngToPlnRequest
+Dane wyjściowe:		Parametr ns2:wordPl – słowo w języku polskim
+Oczekiwany rezultat:	W bazie danych wyszukano wszystkie słowa polskie przypisane do słowa angielskiego
+Priorytet:		Wysoki
 Osoba odpowiedzialna/
-wykonująca test:		Iwona Wojtala;
-Status testu:        		...
-
-
+wykonująca test:	Iwona Wojtala
+Status testu:        	...
